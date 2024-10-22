@@ -866,7 +866,7 @@ h2 {
     background: linear-gradient(to right, var(--quarta-cor) 50%, white 50%);
     background-size: 200% 100%;
     background-position: right;
-    border: 1px solid var(--quarta-cor);
+    border: 2px solid var(--quarta-cor);
     border-radius: 3px;
     color: var(--quinta-cor);
     padding: 15px 20px;
