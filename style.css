@@ -401,14 +401,21 @@ input:checked::before {
 .btn.primary {
     background-color: var(--quarta-cor);
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 35px;
     color: var(--opcional-cor);
     border-radius: 3px;
     font-size: 16px;
     text-align: center;
     display: inline-block;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    background: linear-gradient(to left, var(--quarta-cor) 50%, var(--terceira-cor) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.6s ease;
+}
+
+.btn.primary:hover {
+    background-position: left;
 }
 
 .btn.secondary {
@@ -421,7 +428,7 @@ input:checked::before {
     font-size: 16px;
     text-align: center;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 50px;
     background: linear-gradient(to left, var(--opcional-cor) 50%, var(--quarta-cor) 50%);
     background-size: 200% 100%;
     background-position: right;
@@ -433,9 +440,6 @@ input:checked::before {
     color: var(--opcional-cor);
 }
 
-.btn.primary:hover {
-    background-color: var(--terceira-cor);
-}
 
 @media(max-width: 1024px) {
     .service-card p {
@@ -568,11 +572,14 @@ input:checked::before {
     text-align: center;
     display: inline-block;
     margin-top: 50px;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(to left, var(--quarta-cor) 50%, var(--terceira-cor) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.6s ease;
 }
 
 .btn-iniciar:hover {
-    background-color: var(--terceira-cor);
+    background-position: left;
 }
 
 @media(max-width: 768px) {
@@ -875,7 +882,7 @@ h2 {
     padding: 15px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-position 0.3s ease;
+    transition: background-position 0.6s ease;
 }
 
 #contactBtn:hover {
