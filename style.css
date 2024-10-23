@@ -422,16 +422,19 @@ input:checked::before {
     text-align: center;
     display: inline-block;
     margin-top: 15px;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(to left, var(--opcional-cor) 50%, var(--quarta-cor) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.6s ease;
+}
+
+.btn.secondary:hover {
+    background-position: left;
+    color: var(--opcional-cor);
 }
 
 .btn.primary:hover {
     background-color: var(--terceira-cor);
-}
-
-.btn.secondary:hover {
-    background-color: var(--quarta-cor);
-    color: var(--opcional-cor);
 }
 
 @media(max-width: 1024px) {
