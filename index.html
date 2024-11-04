@@ -40,13 +40,14 @@
     <section class="quick-contact">
         <div class="contact-container">
             <h2>Contato Rápido!</h2>
-            <form class="contact-form">
-                <input type="text" placeholder=" Nome Completo *" required>
-                <input type="text" placeholder=" Wattsapp *" required>
+            <form class="contact-form" action="enviar-email.php" method="POST">
+                <input type="text" name="nome" placeholder=" Nome Completo *" required>
+                <input type="text" name="whatsapp" placeholder=" Whatsapp *" required>
                 <button class="btn-contact-form" type="submit">Solicitar</button>
             </form>
         </div>
     </section>
+    
 
     <!-- Orientação Psicológica -->
     <section class="orientacao-psicologica">
