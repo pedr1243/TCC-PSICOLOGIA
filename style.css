@@ -24,9 +24,10 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    height: 110px;
+    width: 100%;
     background-color: var(--opcional-cor);
     position: relative;
     z-index: 10;
@@ -35,14 +36,14 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    border: 1px olid red;
-    height: 70px;
-    width: 150px;
+    height: 110px;
+    width: 190px;
+    background-image: url(./img/logo-tcc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.logo img{
-    height: 100%;
-    width: 100%;
-}
+
 
 
 nav ul {
@@ -665,7 +666,7 @@ h2 {
 .card {
     border: 1px solid var(--quarta-cor);
     background-color: var(--opcional-cor);
-    max-width: 350px;
+    width: 350px;
     height: 280px;
     border-radius: 3px;
     flex: 1;
@@ -681,7 +682,10 @@ h2 {
 }
 
 .card p {
-    font-size: 16px;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #3C5353;
 }
 
 .icon {
@@ -768,6 +772,7 @@ h2 {
         font-size: 35px;
     }
 }
+
 /* Citação terapia */
 .quote-section {
     background-image: url(./img/sitacao.jpg);
@@ -834,11 +839,9 @@ h2 {
     align-items: center;
     padding: 20px;
     height: auto;
-    /* Ajusta a altura automaticamente */
-    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
-    /* Permite quebra de linha em telas menores */
 }
 
 .contact-info {
@@ -1130,7 +1133,7 @@ blockquote p {
     }
 }
 
-/* Seção Perguntas */
+/* Seção Perguntas faq */
 .section-perguntas {
     min-height: 100vh;
     width: 100%;
@@ -1164,7 +1167,10 @@ blockquote p {
 
 .container-faq p {
     margin-bottom: 30px;
-    color: var(--segunda-cor);
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #3C5353;
 }
 
 .card-faq {
