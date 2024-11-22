@@ -770,7 +770,7 @@ h2 {
 }
 /* Citação terapia */
 .quote-section {
-    background-image: url(./img/sitacao.jpg);
+    background-image: url(./img/sitacao.svg);
     background-size: cover;
     background-position: center;
     min-height: auto;
